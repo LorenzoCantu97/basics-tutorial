@@ -1,0 +1,99 @@
+:root {
+    --primary: #c3db4b;
+    --hover: #97a93b;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.myNavbar {
+    background-color: #39393b;
+}
+
+a {
+    text-decoration: none;
+}
+
+.breadcrumb {
+    --bs-breadcrumb-divider-color: rgb(174, 174, 174);
+}
+
+h2,
+#navbarSupportedContent ul a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#asideMenu {
+    background-color: var(--primary);
+    color: black;
+    min-height: 100vh;
+}
+
+#asideMenu a {
+    color: black;
+}
+
+#asideMenu a:hover {
+    color: black;
+    background-color: var(--hover);
+}
+
+#asideMenu .accordion {
+    --bs-accordion-btn-bg: transparent;
+    --bs-accordion-active-bg: transparent;
+    --bs-accordion-active-color: black;
+    --bs-accordion-bg: none;
+    --bs-accordion-border-color: var(--primary);
+}
+
+.accordion-button:hover {
+    font-weight: bold !important;
+}
+
+#content {
+    background: rgb(195,219,75);
+    background: linear-gradient(90deg, rgba(195,219,75,1) 0%, rgba(57,57,59,1) 100%);
+}
+
+.divButtons button {
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+#detalleOrden {
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#concept {
+    --bs-form-control-bg: transparent;
+    border: 0px;
+    border-radius: 0;
+    border-bottom: 1px solid;
+}
+
+#currency,
+#type,
+#amount {
+    --bs-form-control-bg: transparent;
+    border: 0px;
+    border-radius: 0;
+}
+
+#concept:focus,
+#type:focus,
+#amount:focus,
+#currency:focus,
+#saveCheckbox:focus {
+    box-shadow: none;
+}
+
+#saveCheckbox {
+    background-color: #39393b;
+}
