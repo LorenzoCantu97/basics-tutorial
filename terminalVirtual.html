@@ -79,8 +79,13 @@
                             name="build"></ion-icon>Configuration</a>
                 </div>
             </div>
+
+            <!--BR-->
+            <div class="col-1 border-top" id="gradient">
+
+            </div>
             <!--FORMS Y CONTENIDO-->
-            <div class="col-10 border-top" id="content">
+            <div class="col-9 border-top text-light" id="content">
                 <div class="p-2 divButtons">
                     <button class="bg-secondary"><ion-icon name="add"></ion-icon>New</button>
                     <button class="inline bg-primary"><ion-icon name="refresh"></ion-icon>Refresh</button>
@@ -89,31 +94,31 @@
                 </div>
                 <div class="container">
                     <label for="detalleOrden" class="form-label">Order Details</label>
-                    <form id="detalleOrden">
+                    <form class="border border-light" id="detalleOrden">
                         <div class="row mb-2">
                             <div class="col-12">
                                 <label for="concept" class="form-label">Concept</label>
-                                <input type="text" name="concepto" class="form-control" id="concept"></input>
+                                <input type="text" name="concepto" class="form-control text-light" id="concept"></input>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4">
                                 <label for="tipoVenta" class="form-label">Type</label>
-                                <select class="form-select text-wrap" id="type">
+                                <select class="form-select text-wrap text-light" id="type">
                                     <option selected disabled>Choose a Type</option>
-                                    <option value="1">Buying</option>
-                                    <option value="2">Selling</option>
+                                    <option class="text-dark" value="1">Buying</option>
+                                    <option class="text-dark" value="2">Selling</option>
                                   </select>
                             </div>
                             <div class="col-2">
                                 <label for="tipoVenta" class="form-label">Currency</label>
-                                <select class="form-select text-wrap" id="currency">
-                                    <option value="1" selected>MXN</option>
-                                    <option value="2">DLLS</option>
+                                <select class="form-select text-wrap text-light" id="currency">
+                                    <option class="text-dark" value="1" selected>MXN</option>
+                                    <option class="text-dark" value="2">DLLS</option>
                                   </select>                            </div>
                             <div class="col-3">
                                 <label for="tipoVenta" class="form-label">Amount</label>
-                                <input type="text" class="form-control" value="$" id="amount">
+                                <input type="text" class="form-control text-light" value="$" id="amount">
                             </div>
                             <div class="col-3 p-3 text-light">
                                 <label for="tipoVenta" class="form-label">Save?</label>

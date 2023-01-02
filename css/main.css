@@ -1,6 +1,7 @@
 :root {
     --primary: #c3db4b;
     --hover: #97a93b;
+    --bg-myNavbar: #39393b;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
 }
 
 .myNavbar {
-    background-color: #39393b;
+    background-color: var(--bg-myNavbar);
 }
 
 a {
@@ -51,12 +52,16 @@ h2,
 }
 
 .accordion-button:hover {
-    font-weight: bold !important;
+    text-decoration: underline !important;
+}
+
+#gradient {
+    background: rgb(195,219,75);
+    background: linear-gradient(90deg, rgba(195,219,75,1) 0%, rgba(57,57,59,1) 100%); 
 }
 
 #content {
-    background: rgb(195,219,75);
-    background: linear-gradient(90deg, rgba(195,219,75,1) 0%, rgba(57,57,59,1) 100%);
+    background-color: var(--bg-myNavbar);
 }
 
 .divButtons button {
@@ -75,7 +80,11 @@ h2,
     --bs-form-control-bg: transparent;
     border: 0px;
     border-radius: 0;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid white;
+}
+
+#amount {
+    text-decoration: none;
 }
 
 #currency,
