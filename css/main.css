@@ -1,20 +1,27 @@
 :root {
-    --primary: #c3db4b;
+    --primary: #aac526;
     --hover: #97a93b;
     --bg-myNavbar: #39393b;
 }
 
 body {
-    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
 }
 
-.myNavbar {
+#myNavbar {
     background-color: var(--bg-myNavbar);
 }
 
 a {
     text-decoration: none;
+}
+
+#gradient {
+    position: relative;
+    margin-left: auto;
+    background: rgb(170,197,38);
+    background: linear-gradient(90deg, rgba(170,197,38,1) 0%, rgba(57,57,59,1) 100%); 
 }
 
 .breadcrumb {
@@ -29,9 +36,10 @@ h2,
 }
 
 #asideMenu {
+    position: fixed;
     background-color: var(--primary);
     color: black;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 #asideMenu a {
@@ -51,58 +59,67 @@ h2,
     --bs-accordion-border-color: var(--primary);
 }
 
+.accordion-button:focus {
+    box-shadow: none;
+}
+
 .accordion-button:hover {
     text-decoration: underline !important;
 }
 
-#gradient {
-    background: rgb(195,219,75);
-    background: linear-gradient(90deg, rgba(195,219,75,1) 0%, rgba(57,57,59,1) 100%); 
+#config {
+    text-decoration: underline;
 }
 
 #content {
     background-color: var(--bg-myNavbar);
+    min-height: 100vh;
 }
 
 .divButtons button {
     border: 1px solid;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
-#detalleOrden {
+#btnSearch {
+    background-color: #6610f2;
+}
+
+.form-box {
     padding: 8px;
     background-color: transparent;
     border: 1px solid black;
     border-radius: 7px;
 }
 
-#concept {
+.input-text {
+    text-decoration: none;
     --bs-form-control-bg: transparent;
+    padding-left: 0;
     border: 0px;
     border-radius: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.checkbox {
+    background-color: transparent;
+}
+
+.checkbox:checked {
+    background-color: transparent !important;
+    border-color: white;
+}
+
+.input-text-underline {
     border-bottom: 1px solid white;
 }
 
-#amount {
-    text-decoration: none;
-}
-
-#currency,
-#type,
-#amount {
-    --bs-form-control-bg: transparent;
-    border: 0px;
-    border-radius: 0;
-}
-
-#concept:focus,
-#type:focus,
-#amount:focus,
-#currency:focus,
-#saveCheckbox:focus {
+.input-text:focus,
+.checkbox:focus {
     box-shadow: none;
-}
-
-#saveCheckbox {
-    background-color: #39393b;
 }

@@ -19,110 +19,202 @@
 
 <body>
     <!--MENU SUPERIOR-->
-    <nav class="navbar navbar-expand-lg myNavbar" style="--bs-bg-opacity: .95;">
-        <div class="container-fluid">
-            <a class="ms-lg-3 d-flex">
-                <img class="navbar-brand" src="./public/alienIcon.png" alt="Icon" width="50px">
-                <h2 class="text-light ms-3 ">Company Name</h2>
-            </a>
-            <button class="navbar-toggler bg-light me-3" style="--bs-bg-opacity: .5;" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"
-                aria-label="breadcrumb" style="--bs-breadcrumb-divider: '|';">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item nav-link mx-2 active">
-                        <a class="text-light" href="index.html">Home</a>
-                    </li>
-                    <li class="breadcrumb-item nav-link mx-2">
-                        <a class=" text-light" href="#">Page one</a>
-                    </li>
-                    <li class="breadcrumb-item nav-link mx-2">
-                        <a class="text-light" href="#">Page two</a>
-                    </li>
-                    <li class="breadcrumb-item nav-link mx-2">
-                        <a class="text-light" href="#">Page three</a>
-                    </li>
-                </ol>
+    <div class="sticky-top border border-0 border-bottom">
+        <nav class="navbar navbar-expand-lg" style="--bs-bg-opacity: .95;" id="myNavbar">
+            <div class="container-fluid">
+                <a class="ms-lg-3 d-flex" href="./index.html">
+                    <img class="navbar-brand" src="./public/alienIcon.png" alt="Icon" width="50px">
+                    <h2 class="text-light ms-3 ">Company Name</h2>
+                </a>
+                <button class="navbar-toggler bg-light me-3" style="--bs-bg-opacity: .5;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"
+                    aria-label="breadcrumb" style="--bs-breadcrumb-divider: '|';">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item nav-link mx-2 active">
+                            <a class="text-light" href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item nav-link mx-2">
+                            <a class=" text-light" href="#">Page one</a>
+                        </li>
+                        <li class="breadcrumb-item nav-link mx-2">
+                            <a class="text-light" href="#">Page two</a>
+                        </li>
+                        <li class="breadcrumb-item nav-link mx-2">
+                            <a class="text-light" href="#">Page three</a>
+                        </li>
+                    </ol>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <div class="container-fluid">
         <div class="row">
             <!--MENU IZQUIERDA-->
-            <div class="col-2 border-top" id="asideMenu">
-                <div class="accordion accordion-flush" id="asideMenuAccordion">
-                    <div class="accordion-item border border-start-0 border-end-0">
-                        <h2 class="accordion-header" id="businessWalletHeader">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#businessWalletCollapse" aria-expanded="false"
-                                aria-controls="businessWalletCollapse">
-                                <ion-icon name="wallet"></ion-icon> Business Wallet
-                            </button>
-                        </h2>
-                        <div class="accordion-collapse collapse" id="businessWalletCollapse"
-                            aria-labelledby="businessWalletHeader" data-bs-parent="#asideMenuAccordion">
-                            <div class="accordion-body">
-                                <a href="terminalVirtual.html" class="d-block p-3 text-wrap badge"><ion-icon
-                                        name="card"></ion-icon>Terminal Virtual</a>
-                                <a href="linkDePago.html" class="d-block p-3 text-wrap badge"><ion-icon
-                                        name="clipboard"></ion-icon>Link de Pago</a>
+            <div class="col-2 container-fluid" id="asideMenu">
+                <div class="row mb-2">
+                    <div class="accordion accordion-flush" id="asideMenuAccordion">
+                        <div class="accordion-item border border-start-0 border-end-0">
+                            <h2 class="accordion-header" id="businessWalletHeader">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#businessWalletCollapse" aria-expanded="false"
+                                    aria-controls="businessWalletCollapse">
+                                    <ion-icon name="wallet"></ion-icon> Business Wallet
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse" id="businessWalletCollapse"
+                                aria-labelledby="businessWalletHeader" data-bs-parent="#asideMenuAccordion">
+                                <div class="accordion-body">
+                                    <a href="terminalVirtual.html" class="d-block p-3 text-wrap badge"><ion-icon
+                                            name="card"></ion-icon>Terminal Virtual</a>
+                                    <a href="linkDePago.html" class="d-block p-3 text-wrap badge"><ion-icon
+                                            name="clipboard"></ion-icon>Link de Pago</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="fixed-bottom">
-                    <a href="#" class="badge text-wrap p-3 ms-3" id="config"><ion-icon
-                            name="build"></ion-icon>Configuration</a>
+                <div class="row" id="config">
+                    <div class="container">
+                        <a href="#" class="badge text-wrap p-3 ms-3">
+                            <ion-icon name="build"></ion-icon>Configuration
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!--BR-->
-            <div class="col-1 border-top" id="gradient">
+            <div class="col-1" id="gradient">
 
             </div>
+
             <!--FORMS Y CONTENIDO-->
-            <div class="col-9 border-top text-light" id="content">
-                <div class="p-2 divButtons">
-                    <button class="bg-secondary"><ion-icon name="add"></ion-icon>New</button>
-                    <button class="inline bg-primary"><ion-icon name="refresh"></ion-icon>Refresh</button>
-                    <button class="inline bg-success"><ion-icon name="cash"></ion-icon>Payment</button>
-                    <button class="inline bg-danger"><ion-icon name="trash"></ion-icon>Delete</button>
-                </div>
+            <div class="col-9 text-light" id="content">
                 <div class="container">
+                    <div class="ps-0 p-2 divButtons">
+                        <button class="bg-secondary"><ion-icon name="add"></ion-icon>New</button>
+                        <button class="inline bg-primary"><ion-icon name="refresh"></ion-icon>Refresh</button>
+                        <button class="inline bg-success"><ion-icon name="cash"></ion-icon>Payment</button>
+                        <button class="inline bg-danger"><ion-icon name="trash"></ion-icon>Delete</button>
+                    </div>
                     <label for="detalleOrden" class="form-label">Order Details</label>
-                    <form class="border border-light" id="detalleOrden">
+                    <form class="mb-2 border border-light form-box">
                         <div class="row mb-2">
                             <div class="col-12">
                                 <label for="concept" class="form-label">Concept</label>
-                                <input type="text" name="concepto" class="form-control text-light" id="concept"></input>
+                                <input type="text" name="concept" class="form-control text-light input-text input-text-underline" id="concept"></input>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-4">
-                                <label for="tipoVenta" class="form-label">Type</label>
-                                <select class="form-select text-wrap text-light" id="type">
-                                    <option selected disabled>Choose a Type</option>
+                            <div class="col">
+                                <label class="form-label">Type</label>
+                                <select class="form-select text-wrap text-light input-text">
+                                    <option class="text-danger" selected disabled>Choose a Type</option>
                                     <option class="text-dark" value="1">Buying</option>
                                     <option class="text-dark" value="2">Selling</option>
                                   </select>
                             </div>
-                            <div class="col-2">
-                                <label for="tipoVenta" class="form-label">Currency</label>
-                                <select class="form-select text-wrap text-light" id="currency">
+                            <div class="col">
+                                <label class="form-label">Currency</label>
+                                <select class="form-select text-wrap text-light input-text">
                                     <option class="text-dark" value="1" selected>MXN</option>
                                     <option class="text-dark" value="2">DLLS</option>
-                                  </select>                            </div>
-                            <div class="col-3">
-                                <label for="tipoVenta" class="form-label">Amount</label>
-                                <input type="text" class="form-control text-light" value="$" id="amount">
+                                  </select>                            
                             </div>
-                            <div class="col-3 p-3 text-light">
-                                <label for="tipoVenta" class="form-label">Save?</label>
-                                <input type="checkbox" class="form-check-input" id="saveCheckbox">
+                            <div class="col">
+                                <label class="form-label">Amount</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-transparent text-light border-0" id="basic-addon1">$</span>
+                                    <input type="number" class="form-control text-light input-text input-text-underline" id="amount">
+                                </div>
+                            </div>
+                            <div class="col-2 p-3 text-wrap">
+                                <label class="form-check-label">Save?</label>
+                                <input type="checkbox" class="form-check-input checkbox">
+                            </div>
+                        </div>
+                    </form>
+                    <label class="form-label">Billing Information</label>
+                    <form class="mb-2 border border-light container form-box">
+                        <div class="row divButtons">
+                            <div class="pb-2 divButtons">
+                                <button class="bg-secondary"><ion-icon name="add"></ion-icon>New</button>
+                                <button class="bg-primary"><ion-icon name="save"></ion-icon>Save</button>
+                                <button class="bg-subtle" id="btnSearch"><ion-icon name="search"></ion-icon>Search</button>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control text-light input-text input-text-underline">
+                            </div>
+                            <div class="col-4">
+                                <label for="">E-mail</label>
+                                <input type="email" class="form-control text-light input-text input-text-underline">
+                            </div>
+                            <div class="col-3">
+                                <label for="">Phone</label>
+                                <input type="number" class="form-control text-light  input-text input-text-underline">
+                            </div>
+                        </div>
+                        <div class="row container mx-0">
+                            <label class="form-label">Address</label>
+                            <div class=" border border-light form-box">
+                                <div class="p-2 divButtons">
+                                    <button class="bg-secondary"><ion-icon name="refresh"></ion-icon>New</button>
+                                    <button class="bg-danger"><ion-icon name="trash"></ion-icon>Delete</button>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" class="form-control input-text input-text-underline text-light">
+                                    </div>
+                                    <div class="col">
+                                        <label class="form-label">Last Name</label>
+                                        <input type="text" class="form-control input-text input-text-underline text-light">
+                                    </div>
+                                    <div class="col-2 text-wrap">
+                                        <label class="form-label">Default?</label>
+                                        <input type="checkbox" class="form-check-input checkbox">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <label class="form-label">Address #1</label>
+                                        <input type="text" class="form-control input-text input-text-underline text-light">
+                                    </div>
+                                    <div class="col">
+                                        <label class="form-label">Address #2</label>
+                                        <input type="text" class="form-control input-text input-text-underline text-light">
+                                    </div>
+                                    <div class="col">
+                                        <label class="form-label">Postal code</label>
+                                        <input type="number" class="form-control input-text input-text-underline text-light">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <label class="form-label">Country</label>
+                                        <select class="form-select text-wrap text-light input-text">
+                                            <option class="text-danger" disabled selected>Choose an option</option>
+                                            <option class="text-dark" value="1">Mexico</option>
+                                            <option class="text-dark" value="2">USA</option>
+                                            <option class="text-dark" value="3">Guatemala</option>
+                                        </select>   
+                                    </div>
+                                    <div class="col">
+                                        <label class="form-label">State</label>
+                                        <input type="text" class="form-control text-light input-text input-text-underline">
+                                    </div>
+                                    <div class="col">
+                                        <label class="form-label">City</label>
+                                        <input type="text" class="form-control text-light input-text input-text-underline">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>
